@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "package": {
+        "version": "1.0.0",
+        "name": "sonic-config-ui"
+    },
+    "service": {
+        "name": "sonic-config-ui"
+    },
+    "container": {
+        "privileged": true
+    },
+    "processes": [
+        {
+            "name": "sonic-config-ui",
+            "command": "/usr/bin/app.py"
+        }
+    ],
+    "cli": {
+        "show": "/cli/cli.py"
+    }
+}
